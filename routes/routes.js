@@ -27,7 +27,8 @@ router.get('/aroundme', function(req, res) {
     var lat = req.query.lat;
     var lon = req.query.lon;
 
-    mongoose.connect('mongodb://10.0.33.34/kebab');
+//    mongoose.connect('mongodb://10.0.33.34/kebab');
+    mongoose.connect('mongodb://admin:admin@ds055855.mongolab.com:55855/kebab');
 
     var model = require('../models/Kebab').places;
     var Kebab = mongoose.model('places', model);

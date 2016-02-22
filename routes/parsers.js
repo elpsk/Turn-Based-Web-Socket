@@ -16,7 +16,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/merge', function(req, res, next) {
 
-    mongoose.connect('mongodb://10.0.33.34/kebab');
+    //mongoose.connect('mongodb://10.0.33.34/kebab');
+    mongoose.connect('mongodb://admin:admin@ds055855.mongolab.com:55855/kebab');
 
     var core            = require('../core/engine.js');
     var modeler         = require('../core/modeler.js');
