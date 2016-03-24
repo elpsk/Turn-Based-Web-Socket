@@ -55,7 +55,7 @@ ul {
 
 .login.page .form {
   height: 100px;
-  margin-top: -100px;
+  margin-top: -200px;
   position: absolute;
 
   text-align: center;
@@ -167,9 +167,15 @@ ul {
     font-family: 'Raleway', sans-serif;
     text-align: left;
 }
-#players, #playersLogin {
+#players {
     margin: 0 auto; 
     width: 700px;
+    height: 100px;
+    text-align: center;
+}
+#playersLogin {
+    margin: 0 auto; 
+    width: 400px;
     height: 100px;
     text-align: center;
 }

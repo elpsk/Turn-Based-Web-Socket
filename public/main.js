@@ -1,21 +1,6 @@
 $(function() 
 {
 
-  var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-      sParameterName = sURLVariables[i].split('=');
-
-      if (sParameterName[0] === sParam) {
-        return sParameterName[1] === undefined ? true : sParameterName[1];
-      }
-    }
-  };
-
   // -------------------------------------------------------------------------------------------
   // Constants
   // -------------------------------------------------------------------------------------------
@@ -31,7 +16,7 @@ $(function()
   var kSTARTED      = "started";
   var kSTOPPED      = "stopped";
 
-  var kTIMEOUT      = 2; //getUrlParameter("timeout") || 2;
+  var kTIMEOUT      = 2;
 
 
   // -------------------------------------------------------------------------------------------
@@ -188,7 +173,7 @@ $(function()
     if (Notification.permission !== "granted")
       Notification.requestPermission();
     else {
-      var notification = new Notification('BeMyStanUp!', {
+      var notification = new Notification('Turn-Based socket!', {
         icon: 'https://dl.dropboxusercontent.com/u/11796049/BME/images/pin.png',
         body: "!!! your time is expired !!!",
       });

@@ -1,9 +1,9 @@
 {
-  "name": "BeMyStandUp",
+  "name": "Turn-Based socket",
   "version": "1.0.0",
-  "description": "A standup time-tool.",
+  "description": "A Turn-Based socket time-tool.",
   "main": "index.js",
-  "author": "Uccio",
+  "author": "Alberto Pasca",
   "private": false,
   "license": "MIT",
   "dependencies": {
