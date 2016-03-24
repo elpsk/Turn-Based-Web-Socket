@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>BeMyStandUp</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="/jquery-1.12.0.min.js"></script>
+    <script src="/jquery.countdown.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+
+  <ul class="pages">
+    <li class="chat page">
+        <div id="clock"></div>
+
+        <h4 id="onlinenow">Users online now:</h4>
+        <div id="players">
+        </div>
+
+        <hr/>
+
+        <div id="buttons">
+            <input style="width:49%" type="button" value="start" class="btn btn-sm btn-success" id="btnStart" disabled />
+            &nbsp;
+            <input style="width:49%" type="button" value="stop" class="btn btn-sm btn-danger" id="btnStop" disabled />
+        </div>
+    </li>
+
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">select your name:</h3>
+        <div id="playersLogin">
+            <div id="playerA"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/pasca.jpg" alt="A" /></div>
+            <div id="playerR"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/barletta.jpg" alt="R" /></div>
+            <div id="playerP"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/mangano.jpg" alt="P" /></div>
+            <div id="playerD"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/mallozzi_d.jpg" alt="D" /></div>
+            <div id="playerS"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/mallozzi_s.jpg" alt="S" /></div>
+            <div id="playerF"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/perreca.jpg" alt="F" /></div>
+            <div id="playerG"><img class="circular" src="https://it.bemyeye.com/sites/all/themes/bemyeye_web_v2/images/web/sortino.jpg" alt="G" /></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+
+<script src="/main.js"></script>
+
+</body>
+</html>

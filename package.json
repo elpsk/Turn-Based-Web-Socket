@@ -1,0 +1,17 @@
+{
+  "name": "BeMyStandUp",
+  "version": "1.0.0",
+  "description": "A standup time-tool.",
+  "main": "index.js",
+  "author": "Uccio",
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "express": "3.4.8",
+    "engine.io": "1.6.8",
+    "socket.io-parser": "2.2.6",
+    "socket.io-client": "1.4.5",
+    "socket.io-adapter": "0.4.0",
+    "has-binary": "0.1.7"
+  }
+}
