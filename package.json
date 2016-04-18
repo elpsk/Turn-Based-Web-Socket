@@ -1,5 +1,5 @@
 {
-  "name": "Turn-Based socket",
+  "name": "turn_base_socket",
   "version": "1.0.0",
   "description": "A Turn-Based socket time-tool.",
   "main": "index.js",
